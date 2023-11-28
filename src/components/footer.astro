@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import logoFc24_animate from "~/assets/logo_fc24.gif"
+---
+
+<footer class="relative flex h-64 items-center justify-center">
+  <div class="absolute inset-0 overflow-hidden">
+    <h1 class="text-white text-center font-extrabold text-4xl">
+      NO FALTES!
+    </h1>
+  </div>
+  <Image
+        class="w-44 -mt-6"
+        src={logoFc24_animate}
+        loading="eager"
+        alt="FC24"
+  />
+</footer>
