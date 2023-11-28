@@ -1,18 +1,12 @@
 ---
 import "@fontsource-variable/inter";
-import Compatibility from "~/components/compatibility.astro";
 import Features from "~/components/features.astro";
 import Footer from "~/components/footer.astro";
-import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
-import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
-const image = new URL("social.jpg", site);
-const description =
-  "Build fast websites, faster. Astro is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
 ---
 
 <!doctype html>
@@ -25,7 +19,7 @@ const description =
     <meta name="theme-color" content="#22c55e" />
 
     <title>JOSUE CRUZ 11 - FC24</title>
-    <meta name="description" content={description} />
+    <meta name="description" content="Invitación Josue 11" />
 
     <!-- initialize theme -->
     <script is:inline>
