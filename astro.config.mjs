@@ -4,7 +4,14 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
+
   integrations: [tailwind()],
+  vite: {
+    ssr: {
+      external: ["svgo"],
+    },
+  },
+  adapter: vercel(),
   output: "server",
-  adapter: vercel()
+  base: '/josue11'
 });

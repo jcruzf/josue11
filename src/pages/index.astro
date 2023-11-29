@@ -48,33 +48,50 @@ const { generator, site } = Astro;
   <body
     class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
   >
-    <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
-     
+    <main class="relative h-screen w-full snap-y snap-mandatory overflow-auto">
       <Splash />
-      <div class="snap-start h-screen overflow-hidden space-y-24 px-8 py-32 bg-cover bg-center" style="background-image: url('src/assets/bg_triangles.jpg')">
+      <div
+        class="h-screen snap-start space-y-24 overflow-hidden bg-cover bg-center px-8 py-32"
+        style="background-image: url('src/assets/bg_triangles.jpg')"
+      >
         <Intro />
       </div>
-      
-      <div class="snap-start h-screen overflow-hidden space-y-24 px-8 py-32 relative flex items-center justify-left">
-        <video autoplay loop muted class="absolute z-10 w-auto min-w-full max-w-none -left-1">
+
+      <div
+        class="justify-left relative flex h-screen snap-start items-center space-y-24 overflow-hidden px-8 py-32"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          class="absolute -left-1 z-10 w-auto min-w-full max-w-none"
+        >
           <source src="src/assets/fc24-video-bg.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+           Your browser does not support the video tag.
         </video>
         <Features />
       </div>
 
-      <div class="snap-start h-screen overflow-hidden space-y-24 px-8 py-32 relative flex items-center justify-center">
-        <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+      <div
+        class="relative flex h-screen snap-start items-center justify-center space-y-24 overflow-hidden px-8 py-32"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          class="absolute z-10 min-h-full w-auto min-w-full max-w-none"
+        >
           <source src="src/assets/fc24-haaland-goal-1x1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+           Your browser does not support the video tag.
         </video>
       </div>
-      
-      <div class="snap-start h-screen overflow-hidden space-y-24 px-8 py-32 bg-cover bg-center" style="background-image: url('src/assets/bg_cancha.png')">
-      <Footer />
+
+      <div
+        class="h-screen snap-start space-y-24 overflow-hidden bg-cover bg-center px-8 py-32"
+        style="background-image: url('src/assets/bg_cancha.png')"
+      >
+        <Footer />
       </div>
     </main>
-
-
   </body>
 </html>
